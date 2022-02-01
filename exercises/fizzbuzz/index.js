@@ -1,9 +1,12 @@
 // --- Directions
 // Write a program that console logs the numbers
-// from 1 to n. But for multiples of three print
+// from 1 to n. 
+// ______________________________________________________
+// But for multiples of three print
 // “fizz” instead of the number and for the multiples
 // of five print “buzz”. For numbers which are multiples
 // of both three and five print “fizzbuzz”.
+
 // --- Example
 //   fizzBuzz(5);
 //   1
@@ -12,6 +15,88 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+// modulo %
+
+
+// function fizzBuzz(n) {
+//     let count = 0
+
+//     while (n > count) {
+//         count++
+
+//         if (count % 3 === 0) {
+//             console.log('fizz')
+//         }
+
+//         else if (count % 5 === 0) {
+//             console.log('buzz')
+//         }
+
+//         else if (count % 3 === 0 && n % 5 === 0) {
+//             console.log('fizzbuzz')
+//         }
+
+//         else console.log(count)
+
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+function fizzBuzz(n) {
+    let count = 0
+
+    while (n > count) {
+        count++
+        if (count % 3 === 0 && count % 5 === 0) console.log('fizzbuzz')
+        else if (count % 3 === 0) console.log('fizz')
+        else if (count % 5 === 0) console.log('buzz')
+        else console.log(count)
+    }
+}
+
+
+
+
+console.log(fizzBuzz(50))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 module.exports = fizzBuzz;

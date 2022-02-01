@@ -15,6 +15,54 @@
 //     [11, 16, 15, 6],
 //     [10,  9,  8, 7]]
 
-function matrix(n) {}
+
+
+
+// Too advanced, could not do it.
+// function matrix(n) {
+
+//     let rowNums = []
+
+//     for (let i = 0; i < n; i++) {
+
+//         rowNums.push(i + 1)
+
+//         for (let j = 0; j < n; j++) {
+//             console.log('row =', i + 1)
+//             console.log('column =', j + 1)
+//         }
+//         console.log('------------')
+//     }
+//     return rowNums
+// }
+
+// console.log(matrix(2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 module.exports = matrix;

@@ -7,6 +7,50 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+
+
+
+// function palindrome(str) {
+//     const reversed = str.split('').reverse().join('') // reverse --> abc = cba
+//     if (reversed === str) return true                 // if reversed is the same as string arg
+//     return false
+// }
+
+
+
+
+// Favorite *********************
+function palindrome(str) {
+    const reversed = str.split('').reverse().join('')  // str reversed
+    return str === reversed                            // same as: if else
+}
+
+
+
+
+
+// NOT a good way and I hate it. 
+// every does a boolean check on each element in an array 
+// arr.every((val) => val >5)
+// if any are false then the entire thing is false, needs all true of true.
+// function palindrome(str) {
+//     return str.split('').every((char, i) => {
+//         return char === str[str.length - i - 1]
+//     })
+// }
+
+
+
+
+
+
+
+console.log(palindrome(' aba'))
+
+
+
+
+
+
 
 module.exports = palindrome;
